@@ -9,3 +9,5 @@ h5py
 imgaug
 IPython[all]
 pycocotools
+opencv-python-headless
+wandb
