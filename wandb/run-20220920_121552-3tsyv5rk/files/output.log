@@ -1,0 +1,955 @@
+WARNING:tensorflow:From /usr/local/lib/python3.5/dist-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+WARNING:tensorflow:From /usr/local/lib/python3.5/dist-packages/keras/backend/tensorflow_backend.py:1154: calling reduce_max_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING:tensorflow:From /usr/local/lib/python3.5/dist-packages/keras/backend/tensorflow_backend.py:1188: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+[34m[1mwandb[39m[2m: [33mWARNING[39m Keras version 2.0.8 is not fully supported. Required keras >= 2.4.0
+Starting at epoch 0. LR=0.001
+Checkpoint Path: /tf/logs/interactiveelements20220920T1216/mask_rcnn_interactiveelements_{epoch:04d}.h5
+Selecting layers to train
+fpn_c5p5               (Conv2D)
+fpn_c4p4               (Conv2D)
+fpn_c3p3               (Conv2D)
+fpn_c2p2               (Conv2D)
+fpn_p5                 (Conv2D)
+fpn_p2                 (Conv2D)
+fpn_p3                 (Conv2D)
+fpn_p4                 (Conv2D)
+In model:  rpn_model
+    rpn_conv_shared        (Conv2D)
+    rpn_class_raw          (Conv2D)
+    rpn_bbox_pred          (Conv2D)
+mrcnn_mask_conv1       (TimeDistributed)
+mrcnn_mask_bn1         (TimeDistributed)
+mrcnn_mask_conv2       (TimeDistributed)
+mrcnn_mask_bn2         (TimeDistributed)
+mrcnn_class_conv1      (TimeDistributed)
+mrcnn_class_bn1        (TimeDistributed)
+mrcnn_mask_conv3       (TimeDistributed)
+mrcnn_mask_bn3         (TimeDistributed)
+mrcnn_class_conv2      (TimeDistributed)
+mrcnn_class_bn2        (TimeDistributed)
+mrcnn_mask_conv4       (TimeDistributed)
+mrcnn_mask_bn4         (TimeDistributed)
+mrcnn_bbox_fc          (TimeDistributed)
+mrcnn_mask_deconv      (TimeDistributed)
+mrcnn_class_logits     (TimeDistributed)
+mrcnn_mask             (TimeDistributed)
+/usr/local/lib/python3.5/dist-packages/tensorflow/python/ops/gradients_impl.py:110: UserWarning: Converting sparse IndexedSlices to a dense Tensor of unknown shape. This may consume a large amount of memory.
+  "Converting sparse IndexedSlices to a dense Tensor of unknown shape. "
+WARNING:tensorflow:From /usr/local/lib/python3.5/dist-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+/usr/local/lib/python3.5/dist-packages/keras/engine/training.py:1987: UserWarning: Using a generator with `use_multiprocessing=True` and multiple workers may duplicate your data. Please consider using the`keras.utils.Sequence class.
+  UserWarning('Using a generator with `use_multiprocessing=True`'
+Epoch 1/5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 999/1000 [============================>.] - ETA: 0s - loss: 0.9784 - rpn_class_loss: 0.0593 - rpn_bbox_loss: 0.4696 - mrcnn_class_loss: 0.1303 - mrcnn_bbox_loss: 0.1027 - mrcnn_mask_loss: 0.2166
+/usr/local/lib/python3.5/dist-packages/keras/engine/training.py:2142: UserWarning: Using a generator with `use_multiprocessing=True` and multiple workers may duplicate your data. Please consider using the`keras.utils.Sequence class.
+  UserWarning('Using a generator with `use_multiprocessing=True`'
+1000/1000 [==============================] - 433s - loss: 0.9779 - rpn_class_loss: 0.0592 - rpn_bbox_loss: 0.4694 - mrcnn_class_loss: 0.1302 - mrcnn_bbox_loss: 0.1026 - mrcnn_mask_loss: 0.2164 - val_loss: 1.6932 - val_rpn_class_loss: 0.2092 - val_rpn_bbox_loss: 0.5136 - val_mrcnn_class_loss: 0.4925 - val_mrcnn_bbox_loss: 0.1499 - val_mrcnn_mask_loss: 0.3281
+Epoch 2/5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1000/1000 [==============================] - 355s - loss: 0.4127 - rpn_class_loss: 0.0128 - rpn_bbox_loss: 0.2497 - mrcnn_class_loss: 0.0501 - mrcnn_bbox_loss: 0.0254 - mrcnn_mask_loss: 0.0747 - val_loss: 2.4951 - val_rpn_class_loss: 0.4176 - val_rpn_bbox_loss: 0.4983 - val_mrcnn_class_loss: 0.8548 - val_mrcnn_bbox_loss: 0.2032 - val_mrcnn_mask_loss: 0.5211
+Epoch 3/5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1000/1000 [==============================] - 337s - loss: 0.2973 - rpn_class_loss: 0.0085 - rpn_bbox_loss: 0.1753 - mrcnn_class_loss: 0.0394 - mrcnn_bbox_loss: 0.0158 - mrcnn_mask_loss: 0.0583 - val_loss: 2.5474 - val_rpn_class_loss: 0.4826 - val_rpn_bbox_loss: 0.4736 - val_mrcnn_class_loss: 0.8784 - val_mrcnn_bbox_loss: 0.1887 - val_mrcnn_mask_loss: 0.5240
+Epoch 4/5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1000/1000 [==============================] - 335s - loss: 0.2481 - rpn_class_loss: 0.0067 - rpn_bbox_loss: 0.1439 - mrcnn_class_loss: 0.0346 - mrcnn_bbox_loss: 0.0124 - mrcnn_mask_loss: 0.0506 - val_loss: 2.1200 - val_rpn_class_loss: 0.3853 - val_rpn_bbox_loss: 0.4153 - val_mrcnn_class_loss: 0.7478 - val_mrcnn_bbox_loss: 0.1390 - val_mrcnn_mask_loss: 0.4327
+Epoch 5/5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1000/1000 [==============================] - 342s - loss: 0.2055 - rpn_class_loss: 0.0058 - rpn_bbox_loss: 0.1134 - mrcnn_class_loss: 0.0300 - mrcnn_bbox_loss: 0.0102 - mrcnn_mask_loss: 0.0462 - val_loss: 2.3217 - val_rpn_class_loss: 0.5411 - val_rpn_bbox_loss: 0.3793 - val_mrcnn_class_loss: 0.7720 - val_mrcnn_bbox_loss: 0.1617 - val_mrcnn_mask_loss: 0.4676
+WARNING:tensorflow:From /tf/mrcnn/model.py:772: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+Loading weights from  /tf/logs/interactiveelements20220920T1216/mask_rcnn_interactiveelements_0004.h5
+Re-starting from epoch 4
+original_image           shape: (512, 512, 3)         min:    0.00000  max:  255.00000  uint8
+image_meta               shape: (22,)                 min:    0.00000  max: 2340.00000  float64
+gt_class_id              shape: (14,)                 min:    2.00000  max:    9.00000  int64
+gt_bbox                  shape: (14, 4)               min:   20.00000  max:  473.00000  int32
+gt_mask                  shape: (512, 512, 14)        min:    0.00000  max:    1.00000  bool
+Processing 1 images
+image                    shape: (512, 512, 3)         min:    0.00000  max:  255.00000  uint8
+molded_images            shape: (1, 512, 512, 3)      min: -123.70000  max:  151.10000  float64
+image_metas              shape: (1, 22)               min:    0.00000  max:  512.00000  int64
+anchors                  shape: (1, 65472, 4)         min:   -0.70849  max:    1.58325  float32
+original_image           shape: (512, 512, 3)         min:    0.00000  max:  255.00000  uint8
+image_meta               shape: (22,)                 min:    0.00000  max: 2340.00000  float64
+gt_class_id              shape: (17,)                 min:    1.00000  max:    9.00000  int64
+gt_bbox                  shape: (17, 4)               min:   20.00000  max:  483.00000  int32
+gt_mask                  shape: (512, 512, 17)        min:    0.00000  max:    1.00000  bool
+Processing 1 images
+image                    shape: (512, 512, 3)         min:    0.00000  max:  255.00000  uint8
+molded_images            shape: (1, 512, 512, 3)      min: -123.70000  max:  151.10000  float64
+image_metas              shape: (1, 22)               min:    0.00000  max:  512.00000  int64
+anchors                  shape: (1, 65472, 4)         min:   -0.70849  max:    1.58325  float32
+Processing 1 images
+image                    shape: (512, 512, 3)         min:    0.00000  max:  255.00000  uint8
+molded_images            shape: (1, 512, 512, 3)      min: -123.70000  max:  151.10000  float64
+image_metas              shape: (1, 22)               min:    0.00000  max:  512.00000  int64
+anchors                  shape: (1, 65472, 4)         min:   -0.70849  max:    1.58325  float32
+Processing 1 images
+image                    shape: (512, 512, 3)         min:    0.00000  max:  255.00000  uint8
+molded_images            shape: (1, 512, 512, 3)      min: -123.70000  max:  151.10000  float64
+image_metas              shape: (1, 22)               min:    0.00000  max:  512.00000  int64
+anchors                  shape: (1, 65472, 4)         min:   -0.70849  max:    1.58325  float32
+original_image           shape: (512, 512, 3)         min:    0.00000  max:  255.00000  uint8
+image_meta               shape: (22,)                 min:    0.00000  max: 2340.00000  float64
+gt_class_id              shape: (18,)                 min:    2.00000  max:    9.00000  int64
+gt_bbox                  shape: (18, 4)               min:   20.00000  max:  483.00000  int32
+gt_mask                  shape: (512, 512, 18)        min:    0.00000  max:    1.00000  bool
+Processing 1 images
+image                    shape: (512, 512, 3)         min:    0.00000  max:  255.00000  uint8
+molded_images            shape: (1, 512, 512, 3)      min: -123.70000  max:  151.10000  float64
+image_metas              shape: (1, 22)               min:    0.00000  max:  512.00000  int64
+anchors                  shape: (1, 65472, 4)         min:   -0.70849  max:    1.58325  float32
+original_image           shape: (512, 512, 3)         min:    0.00000  max:  255.00000  uint8
+image_meta               shape: (22,)                 min:    0.00000  max: 2340.00000  float64
+gt_class_id              shape: (17,)                 min:    2.00000  max:    9.00000  int64
+gt_bbox                  shape: (17, 4)               min:   20.00000  max:  483.00000  int32
+gt_mask                  shape: (512, 512, 17)        min:    0.00000  max:    1.00000  bool
+Processing 1 images
+image                    shape: (512, 512, 3)         min:    0.00000  max:  255.00000  uint8
+molded_images            shape: (1, 512, 512, 3)      min: -123.70000  max:  151.10000  float64
+image_metas              shape: (1, 22)               min:    0.00000  max:  512.00000  int64
+anchors                  shape: (1, 65472, 4)         min:   -0.70849  max:    1.58325  float32
+Processing 1 images
+image                    shape: (512, 512, 3)         min:    0.00000  max:  255.00000  uint8
+molded_images            shape: (1, 512, 512, 3)      min: -123.70000  max:  151.10000  float64
+image_metas              shape: (1, 22)               min:    0.00000  max:  512.00000  int64
+anchors                  shape: (1, 65472, 4)         min:   -0.70849  max:    1.58325  float32
+original_image           shape: (512, 512, 3)         min:    0.00000  max:  255.00000  uint8
+image_meta               shape: (22,)                 min:    0.00000  max: 2340.00000  float64
+gt_class_id              shape: (19,)                 min:    1.00000  max:    9.00000  int64
+gt_bbox                  shape: (19, 4)               min:   20.00000  max:  483.00000  int32
+gt_mask                  shape: (512, 512, 19)        min:    0.00000  max:    1.00000  bool
+Processing 1 images
+image                    shape: (512, 512, 3)         min:    0.00000  max:  255.00000  uint8
+molded_images            shape: (1, 512, 512, 3)      min: -123.70000  max:  151.10000  float64
+image_metas              shape: (1, 22)               min:    0.00000  max:  512.00000  int64
+anchors                  shape: (1, 65472, 4)         min:   -0.70849  max:    1.58325  float32
+original_image           shape: (512, 512, 3)         min:    0.00000  max:  255.00000  uint8
+image_meta               shape: (22,)                 min:    0.00000  max: 2340.00000  float64
+gt_class_id              shape: (19,)                 min:    2.00000  max:    9.00000  int64
+gt_bbox                  shape: (19, 4)               min:   20.00000  max:  483.00000  int32
+gt_mask                  shape: (512, 512, 19)        min:    0.00000  max:    1.00000  bool
+Processing 1 images
+image                    shape: (512, 512, 3)         min:    0.00000  max:  255.00000  uint8
+molded_images            shape: (1, 512, 512, 3)      min: -123.70000  max:  151.10000  float64
+image_metas              shape: (1, 22)               min:    0.00000  max:  512.00000  int64
+anchors                  shape: (1, 65472, 4)         min:   -0.70849  max:    1.58325  float32
+mAP:  0.8952205882407724
