@@ -1,0 +1,21 @@
+{
+    "startedAt": "2022-12-04T00:28:12.498948",
+    "gpu_count": 1,
+    "host": "c26a200d98f4",
+    "executable": "/usr/bin/python3",
+    "root": "/tf",
+    "os": "Linux-5.4.0-135-generic-x86_64-with-Ubuntu-16.04-xenial",
+    "state": "running",
+    "cpu_count": 8,
+    "python": "3.5.2",
+    "docker": null,
+    "cuda": "10.0.130",
+    "program": "train_ie.ipynb",
+    "heartbeatAt": "2022-12-04T00:28:14.796620",
+    "args": [
+        "-f",
+        "/root/.local/share/jupyter/runtime/kernel-081aa31f-9a13-401d-b303-d5dff0412d3a.json"
+    ],
+    "gpu": "NVIDIA GeForce RTX 2060 SUPER",
+    "username": "root"
+}
